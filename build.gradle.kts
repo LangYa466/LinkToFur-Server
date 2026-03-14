@@ -27,10 +27,6 @@ dependencies {
     implementation("org.mindrot:jbcrypt:0.4")
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
-
 tasks.jar {
     val commitHash = runCatching {
         providers.exec {
